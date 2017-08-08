@@ -16,7 +16,7 @@
 	<County>
 		<Code>3</Code>
 		<Name>Nairobi</Name> 	
-        <Nasa>90000</Nasa> 
+        <Nasa>10000</Nasa> 
         <Jubilee>80000</Jubilee> 
 		<Total>900000</Total> 
     </County> 
@@ -30,7 +30,7 @@
 	<County>
 		<Code>5</Code>
 		<Name>Bomet</Name> 	
-        <Nasa>90000</Nasa> 
+        <Nasa>50000</Nasa> 
         <Jubilee>80000</Jubilee> 
 		<Total>900000</Total> 
     </County> 

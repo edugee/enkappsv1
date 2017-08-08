@@ -1,5 +1,5 @@
 jQuery.fn.vectorMap('addMap', 'KenyaCounty', 
-{"insets": [{"width": 900, "top": 0, "height": 1054.4456598737515,
+{"insets": [{"width": 9000, "top": 0, "height": 1054.4456598737515,
 "bbox": [{"y": -4361143.781154416, "x": -2822439.5658800667},
 {"y": 5651492.432223669, "x": 5723636.287018039}], "left": 0}],
 "paths":

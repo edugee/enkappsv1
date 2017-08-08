@@ -86,11 +86,11 @@ $j(document).ready(function() {
 
 
 <script>
-	var cdata = {} ;
+	var cdata = {'id0' : '0','id1' : '0','id2' : '0','id3' : '0','id4' : '0','id5' : '0',} ;
 	var cdata1 = [] ;
 	var cdata2  = [] ;
 	var cdata3 = [] ;
-	var mycdata = {'id0' : '1', 'id1' : '0'} ;
+	//var mycdata = {'id0' : '1', 'id1' : '0'} ;
 	
 	function myFunction(a) {
 	var $j = jQuery.noConflict();
@@ -145,8 +145,8 @@ $j(document).ready(function() {
 	cdata3.push(x2[i].firstChild.nodeValue)  ;
     }    
 	
-	alert(cdata['id0'] + 'FIRST') ;
-	alert(mycdata['id0'] + 'SECOND' ) ;
+	//alert(cdata['id0'] + 'FIRST') ;
+	//alert(mycdata['id0'] + 'SECOND' ) ;
 	
 	}
 </script>

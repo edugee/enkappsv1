@@ -108,11 +108,11 @@ $j(document).ready(function() {
 
 	function XMLoad(xml) {
     var xmlDoc = xml.responseXML;
-    var x =  xmlDoc.getElementsByTagName('*');
+    var x =  xmlDoc.getElementsByTagName('County');
 
-    for(var i = 0 ; i < x.length ; i++)
+    for(var i = 0 ; i < 2 ; i++)
     {
-    // alert(x[i].nodeName + ' = ' + x[i].firstChild.nodeValue);
+     alert(x[i].nodeName + ' = ' + x[i].firstChild.nodeValue);
     }
     
     //var x = xmlDoc.getElementsByTagName('author')[1];

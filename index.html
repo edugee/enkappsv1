@@ -78,7 +78,7 @@ $j(document).ready(function() {
 	
      });
 	 
-	
+	LoadFunction() ;
 
 
 });
@@ -144,7 +144,7 @@ $j(document).ready(function() {
 	cdata2.push(x1[i].firstChild.nodeValue)  ;
 	cdata3.push(x2[i].firstChild.nodeValue)  ;
     }    
-	
+	LoadMap() ;
 	//alert(cdata['id0'] + 'FIRST') ;
 	//alert(mycdata['id0'] + 'SECOND' ) ;
 	
@@ -158,12 +158,10 @@ var $j = jQuery.noConflict();
 }
 
 </script>
-
 <script>
-    jQuery.noConflict();
-    jQuery(function(){
-	  LoadFunction();
-      var $ = jQuery;
+function LoadMap() {
+jQuery.noConflict();
+ var $ = jQuery;
 	  var currentCode;
       $('#map1').vectorMap({
         map: 'KenyaCounty',
@@ -218,8 +216,13 @@ var $j = jQuery.noConflict();
 		  }		  
         },	 		
       });
-    })
-  </script>
+
+
+}
+
+</script>
+
+
 </head>
 <body>
   <div style="height: 1000px"></div>

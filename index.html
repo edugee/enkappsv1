@@ -86,7 +86,7 @@ $j(document).ready(function() {
 
 
 <script>
-	var cdata = [] ;
+	var cdata  ;
 	var cdata1 = [] ;
 	var cdata2  = [] ;
 	var cdata3 = [] ;
@@ -131,19 +131,20 @@ $j(document).ready(function() {
 	if(my_x > my_y)
 	{
 	passvalue = 'id' + i ;
-	cdata[passvalue] = 1 ;
+	cdata[passvalue] = '1' ;
 	passvalue = '';
 	}
 	else
 	{
 	passvalue = 'id' + i  ;
-	cdata[passvalue] = 0 ;
+	cdata[passvalue] = '0' ;
 	passvalue = '';
 	}
 	cdata1.push(x[i].firstChild.nodeValue) ;
 	cdata2.push(x1[i].firstChild.nodeValue)  ;
 	cdata3.push(x2[i].firstChild.nodeValue)  ;
     }    
+	alert(cdata['id0']) ;
 
 	}
 </script>

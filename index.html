@@ -90,7 +90,6 @@ $j(document).ready(function() {
 	var cdata1 = [] ;
 	var cdata2  = [] ;
 	var cdata3 = [] ;
-	var mycdata = {'id0' : '1', 'id1' : '0'} ;
 	
 	function myFunction(a) {
 	var $j = jQuery.noConflict();
@@ -144,8 +143,7 @@ $j(document).ready(function() {
 	cdata2.push(x1[i].firstChild.nodeValue)  ;
 	cdata3.push(x2[i].firstChild.nodeValue)  ;
     }    
-	alert(cdata['id0']) ;
-	alert(mycdata['id0']) ;
+	
 
 	}
 </script>
@@ -178,7 +176,7 @@ var $j = jQuery.noConflict();
             '0': '#FF69B4',
             '1': '#4169E1'
           },
-              values: mycdata
+              values: cdata
           }]
         },
 		

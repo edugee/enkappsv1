@@ -86,10 +86,11 @@ $j(document).ready(function() {
 
 
 <script>
-	var cdata = {'id0' : '0','id1' : '0','id2' : '0','id3' : '0','id4' : '0','id5' : '0','id6' : '0'} ;
+	var cdata = {} ;
 	var cdata1 = [] ;
 	var cdata2  = [] ;
 	var cdata3 = [] ;
+	var cdata4 = [] ;
 	//var mycdata = {'id0' : '1', 'id1' : '0'} ;
 	
 	function myFunction(a) {
@@ -117,7 +118,7 @@ $j(document).ready(function() {
     var x =  xmlDoc.getElementsByTagName('Nasa');
 	var x1 =  xmlDoc.getElementsByTagName('Jubilee');
 	var x2 =  xmlDoc.getElementsByTagName('Total');
-
+	var x3 =  xmlDoc.getElementsByTagName('Name');
 	var my_x;
 	var my_y;
 	var passvalue ;
@@ -143,26 +144,26 @@ $j(document).ready(function() {
 	cdata1.push(x[i].firstChild.nodeValue) ;
 	cdata2.push(x1[i].firstChild.nodeValue)  ;
 	cdata3.push(x2[i].firstChild.nodeValue)  ;
+	cdata4.push(x3[i].firstChild.nodeValue)  ;
     }    
-	LoadMap() ;
-	//alert(cdata['id0'] + 'FIRST') ;
-	//alert(mycdata['id0'] + 'SECOND' ) ;
-	
+	LoadMap() ;	
 	}
 </script>
 
 <script>
-function myFunction(a) {
+function myFunction() {
 var $j = jQuery.noConflict();
  $j('#myModal').modal('show');
+ alert(currentCode) ;
 }
 
 </script>
 <script>
+var currentCode;
 function LoadMap() {
 jQuery.noConflict();
  var $ = jQuery;
-	  var currentCode;
+	  
       $('#map1').vectorMap({
         map: 'KenyaCounty',
         panOnDrag: true,
@@ -210,9 +211,7 @@ jQuery.noConflict();
 		  {
 		  $('#map1').vectorMap('set', 'focus', {region: code, animate: true });
 		  currentCode = code ;
-		  alert(cdata[1]) ;
-		  alert(mycdata[1]) ;
-		  myFunction(code);		  
+		  myFunction();		  
 		  }		  
         },	 		
       });
@@ -221,8 +220,6 @@ jQuery.noConflict();
 }
 
 </script>
-
-
 </head>
 <body>
   <div style="height: 1000px"></div>
@@ -242,7 +239,7 @@ jQuery.noConflict();
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Tharaka Nithi</h4>
+        <h4 class="modal-title"></h4>
       </div>
       <div class="modal-body">
 	    <div class="progress">

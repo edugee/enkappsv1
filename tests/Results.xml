@@ -1,0 +1,45 @@
+<ElectionResults> 
+    <County>
+		<Code>1</Code>
+		<Name>Kiambu</Name> 
+        <Nasa>90000</Nasa> 
+        <Jubilee>80000</Jubilee> 
+		<Total>900000</Total> 
+    </County>
+	<County>
+		<Code>2</Code>
+		<Name>Kisumu</Name> 	
+        <Nasa>90000</Nasa> 
+        <Jubilee>80000</Jubilee> 
+		<Total>900000</Total> 
+    </County> 
+	<County>
+		<Code>3</Code>
+		<Name>Nairobi</Name> 	
+        <Nasa>90000</Nasa> 
+        <Jubilee>80000</Jubilee> 
+		<Total>900000</Total> 
+    </County> 
+	<County>
+		<Code>4</Code>  
+		<Name>Mombasa</Name> 	
+        <Nasa>90000</Nasa> 
+        <Jubilee>80000</Jubilee> 
+		<Total>900000</Total> 
+    </County> 
+	<County>
+		<Code>5</Code>
+		<Name>Bomet</Name> 	
+        <Nasa>90000</Nasa> 
+        <Jubilee>80000</Jubilee> 
+		<Total>900000</Total> 
+    </County> 
+	<County>
+		<Code>6</Code>  
+		<Name>Nakuru</Name> 	
+        <Nasa>90000</Nasa> 
+        <Jubilee>80000</Jubilee> 
+		<Total>900000</Total> 
+    </County>
+ 
+</ElectionResults>

@@ -90,6 +90,7 @@ $j(document).ready(function() {
 	var cdata1 = [] ;
 	var cdata2  = [] ;
 	var cdata3 = [] ;
+	var mycdata = {"US": "35", "NO": "15", "SE": "17", "GB": "20", "ES": "10"};
 	
 	function myFunction(a) {
 	var $j = jQuery.noConflict();
@@ -208,6 +209,7 @@ var $j = jQuery.noConflict();
 		  $('#map1').vectorMap('set', 'focus', {region: code, animate: true });
 		  currentCode = code ;
 		  alert(cdata[1]) ;
+		  alert(mycdata[1]) ;
 		  myFunction(code);		  
 		  }		  
         },	 		

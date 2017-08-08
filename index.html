@@ -86,6 +86,11 @@ $j(document).ready(function() {
 
 
 <script>
+	var cdata = [] ;
+	var cdata1 = [] ;
+	var cdata2  = [] ;
+	var cdata3 = [] ;
+	
 	function myFunction(a) {
 	var $j = jQuery.noConflict();
 	$j('#myModal').modal('show');
@@ -112,17 +117,33 @@ $j(document).ready(function() {
 	var x1 =  xmlDoc.getElementsByTagName('Jubilee');
 	var x2 =  xmlDoc.getElementsByTagName('Total');
 
-
-
-    for(var i = 0 ; i < 2 ; i++)
+	var my_x;
+	var my_y;
+	var passvalue ;
+	
+    for(var i = 0 ; i < x.length ; i++)
     {
-     alert(x[i].nodeName + ' = ' + x[i].firstChild.nodeValue);
-    }
-    
-    //var x = xmlDoc.getElementsByTagName('author')[1];
-    //var y = x.childNodes[0];
-    //document.getElementById("demo").innerHTML =
-    //y.nodeValue; 
+	
+	my_x = x[i].firstChild.nodeValue ;
+	my_y = x1[i].firstChild.nodeValue ;
+	
+	if(my_x > my_y)
+	{
+	passvalue = 'id' + i + ' : ' + '1' ;
+	cdata.push(passvalue);
+	passvalue = '';
+	}
+	else
+	{
+	passvalue = 'id' + i + ' : ' + '0' ;
+	cdata.push(passvalue);
+	passvalue = '';
+	}
+	cdata1.push(x[i].firstChild.nodeValue) ;
+	cdata2.push(x1[i].firstChild.nodeValue)  ;
+	cdata3.push(x2[i].firstChild.nodeValue)  ;
+    }    
+
 	}
 </script>
 
@@ -150,11 +171,11 @@ var $j = jQuery.noConflict();
         },
         series: {
           regions: [{
-              values: {
-              "id0": "#FF0000",
-              "id1": "#00FF00",          
-              "id2": "#0000FF"
-            }
+		  scale: {
+            '0': '#FF69B4',
+            '1': '#4169E1'
+          },
+              values: cdata
           }]
         },
 		

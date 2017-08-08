@@ -90,7 +90,7 @@ $j(document).ready(function() {
 	var cdata1 = [] ;
 	var cdata2  = [] ;
 	var cdata3 = [] ;
-	var mycdata = {"id0": "1", "id1": "1", "id2": "0", "id3": "0", "id4": "1"};
+	
 	
 	function myFunction(a) {
 	var $j = jQuery.noConflict();
@@ -130,14 +130,14 @@ $j(document).ready(function() {
 	
 	if(my_x > my_y)
 	{
-	passvalue = 'id' + i + ' : ' + '1' ;
-	cdata.push(passvalue);
+	passvalue = 'id' + i ;
+	cdata[passvalue] = 1 ;
 	passvalue = '';
 	}
 	else
 	{
-	passvalue = 'id' + i + ' : ' + '0' ;
-	cdata.push(passvalue);
+	passvalue = 'id' + i  ;
+	cdata[passvalue] = 0 ;
 	passvalue = '';
 	}
 	cdata1.push(x[i].firstChild.nodeValue) ;
@@ -176,7 +176,7 @@ var $j = jQuery.noConflict();
             '0': '#FF69B4',
             '1': '#4169E1'
           },
-              values: mycdata
+              values: cdata
           }]
         },
 		

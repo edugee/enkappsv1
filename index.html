@@ -192,7 +192,6 @@ var $j = jQuery.noConflict();
 		regions: {
         render: function(code){         
 
-          
             return code.split('id')[1];
           
         }}},
@@ -207,7 +206,8 @@ var $j = jQuery.noConflict();
 		  else
 		  {
 		  $('#map1').vectorMap('set', 'focus', {region: code, animate: true });
-		  currentCode = code ;	
+		  currentCode = code ;
+		  alert(cdata[1]) ;
 		  myFunction(code);		  
 		  }		  
         },	 		
